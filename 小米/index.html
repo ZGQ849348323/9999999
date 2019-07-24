@@ -6,73 +6,146 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/index.css">
-
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/header.css">
 </head>
 
-<script src="js/header.js"></script>
+<script src="./js/header.js"></script>
 
 <body>
-	<div class="bigBox">
-		<div class="topTitle">
-			<div class="ttLeft">
-				<img src="img/tupian/mi-logo.png" alt="">
-			</div>
-			<ul>
-				<li><a href="javacript:;">小米手机</a></li>
-				<li><a href="javacript:;">Redmi红米</a></li>
-				<li><a href="javacript:;">电视</a></li>
-				<li><a href="javacript:;">笔记本</a></li>
-				<li><a href="javacript:;">家电</a></li>
-				<li><a href="javacript:;">路由器</a></li>
-				<li><a href="javacript:;">智能硬件</a></li>
-				<li><a href="javacript:;">服务</a></li>
-				<li><a href="javacript:;">社区</a></li>
-			</ul>
-			<div class="ttRight">
-				<input type="text">
-				<input type="search">
-			</div>
-		</div>
-		<div class="carousel">
-			<div class="carLeft">
+	<div class="box">
+		<div class="box1">
+			<div class="topTitle">
+				<div class="ttLeft">
+					<img src="img/tupian/mi-logo.png" alt="">
+				</div>
 				<ul>
-					<li><a href="javascript:;">手机 电话卡</a></li>
-					<li><a href="javascript:;">电视 盒子</a></li>
-					<li><a href="javascript:;">笔记本 平板</a></li>
-					<li><a href="javascript:;">家电 插线板</a></li>
-					<li><a href="javascript:;">出行 穿戴</a></li>
-					<li><a href="javascript:;">智能 路由器</a></li>
-					<li><a href="javascript:;">电源 配件</a></li>
-					<li><a href="javascript:;">健康 儿童</a></li>
-					<li><a href="javascript:;">耳机 音响</a></li>
-					<li><a href="javascript:;">生活 箱包</a></li>
+					<li><a href="javacript:;">小米手机</a></li>
+					<li><a href="javacript:;">Redmi红米</a></li>
+					<li><a href="javacript:;">电视</a></li>
+					<li><a href="javacript:;">笔记本</a></li>
+					<li><a href="javacript:;">家电</a></li>
+					<li><a href="javacript:;">路由器</a></li>
+					<li><a href="javacript:;">智能硬件</a></li>
+					<li><a href="javacript:;">服务</a></li>
+					<li><a href="javacript:;">社区</a></li>
 				</ul>
+				<div class="ttRight">
+					<input type="text">
+					<input type="search">
+				</div>
 			</div>
-			<div class="carReft"></div>
-		</div>
-		<div class="carBottom">
-			<div class="carB1">
-				<ul>
-					<li><a href="javascript:;">选购手机</a></li>
-					<li><a href="javascript:;">企业团购</a></li>
-					<li><a href="javascript:;">F码通道</a></li>
-					<li><a href="javascript:;">米粉卡</a></li>
-					<li><a href="javascript:;">以旧换新</a></li>
-					<li><a href="javascript:;">话费充值</a></li>
-					
-				</ul>
+			<div class="carousel">
+				<div class="carLeft" id="carL">
+					<ul>
+						<li v-for="(cars,i) of car" :key="i"><a href="javascript:;">{{cars}}</a></li>
+						<!-- <li><a href="javascript:;">电视 盒子</a></li>
+								<li><a href="javascript:;">笔记本 平板</a></li>
+								<li><a href="javascript:;">家电 插线板</a></li>
+								<li><a href="javascript:;">出行 穿戴</a></li>
+								<li><a href="javascript:;">智能 路由器</a></li>
+								<li><a href="javascript:;">电源 配件</a></li>
+								<li><a href="javascript:;">健康 儿童</a></li>
+								<li><a href="javascript:;">耳机 音响</a></li>
+								<li><a href="javascript:;">生活 箱包</a></li> -->
+					</ul>
+				</div>
+				<div class="carReft"></div>
 			</div>
-			<div class="carB2"><img src="img/tupian/xmad_15635211778456_lIxRQ.jpg" alt=""></div>
-			<div class="carB2"><img src="img/tupian/xmad_15629205000801_vZyDb.jpg" alt=""></div>
-			<div class="carB2"><img src="img/tupian/xmad_15604776623629_bRHhl.jpg" alt=""></div>
+			<div class="carBottom">
+				<div class="carB1">
+					<ul>
+						<li><a href="javascript:;">选购手机</a></li>
+						<li><a href="javascript:;">企业团购</a></li>
+						<li><a href="javascript:;">F码通道</a></li>
+						<li><a href="javascript:;">米粉卡</a></li>
+						<li><a href="javascript:;">以旧换新</a></li>
+						<li><a href="javascript:;">话费充值</a></li>
+
+					</ul>
+				</div>
+				<div class="carB2"><img src="img/tupian/xmad_15635211778456_lIxRQ.jpg" alt=""></div>
+				<div class="carB2"><img src="img/tupian/xmad_15629205000801_vZyDb.jpg" alt=""></div>
+				<div class="carB2"><img src="img/tupian/xmad_15604776623629_bRHhl.jpg" alt=""></div>
+			</div>
+			<div class="middle">
+				<img src="img/tupian/xmad_15625126063988_sCIBm.jpg" alt="">
+			</div>
 		</div>
-		<div class="middle">
-			<img src="img/tupian/xmad_15625126063988_sCIBm.jpg" alt="">
+		<div class="box2">
+			<div class="bottomBox">
+				<div class="b2head">
+					<h2>手机</h2>
+					<div class="b2headRight">
+						<a href="javascript:;">查看全部</a>
+					</div>
+				</div>
+				<div class="commodity">
+					<div class="commodityLeft">
+						<img src="img/tupian/xmad_15632723287643_WkFwH.jpg" alt="">
+					</div>
+					<div class="commodityRight">
+						<div class="commRList">
+							<div class="commTitle">新品</div>
+							<img src="img/tupian/pms_1550642182.7527088!220x220.jpg" alt="">
+							<a href="javascript:;">小米9 6GB+128GB</a>
+							<span>骁龙855，索尼4800万超广角微距三摄</span>
+							<span class="price">2799元</span>
+						</div>       
+						<div class="commRList">
+								<img src="img/tupian/pms_1540429613.4617799!220x220.jpg" alt="">
+								<a href="javascript:;">小米MIX 3  6GB+128GB</a>
+								<span>磁动力滑盖全面屏 / 四曲面陶瓷机身</span>
+								<span class="price">3299元</span>
+						</div>
+						<div class="commRList">
+								<img src="img/tupian/pms_1552647865.67536173!220x220.jpg" alt="">
+								<a href="javascript:;">Redmi Note 7 Pro</a>
+								<span>6GB+128GB大存储，索尼4800万拍照</span>
+								<span class="price">1599元</span>
+						</div>
+						<div class="commRList">
+								<div class="commTitle" style="background-color: #e53935">新品</div>
+								<img src="img/tupian/pms_1554694214.08887531!220x220.png" alt="">
+								<a href="javascript:;">小米Play 4GB+64GB</a>
+								<span>八核高性能处理器，后置1200万 AI 双摄</span>
+								<span class="price">749元</span>
+						</div>
+						<div class="commRList">
+								<div class="commTitle" style="background-color: #e53935">秒杀</div>
+								<img src="img/tupian/pms_1538019009.57772743!220x220.png" alt="">
+								<a href="javascript:;">小米8 屏幕指纹版 6GB+128GB</a>
+								<span>全球首款压感屏幕指纹 骁龙845处理器</span>
+								<span class="price">1799元</span>
+						</div>
+						<div class="commRList">
+								<div class="commTitle" style="background-color: #e53935">减 200 元</div>
+								<img src="img/tupian/pms_1537324004.08544830!220x220.jpg" alt="">
+								<a href="javascript:;">小米8青春版6GB+64GB</a>
+								<span>潮流镜面渐变色，2400万自拍旗舰</span>
+								<span class="price">1499元</span>
+						</div>
+						<div class="commRList">
+								<div class="commTitle" style="background-color: #e53935">秒杀</div>
+								<img src="img/tupian/pms_1547020972.223707!220x220.jpg" alt="">
+								<a href="javascript:;">Redmi Note 7 6GB+64G</a>
+								<span>4800万拍照，4000mAh大电量</span>
+								<span class="price">1199元</span>
+						</div>
+						<div class="commRList">
+								<img src="img/tupian/pms_1558857780.47412427!220x220.jpg" alt="">
+								<a href="javascript:;">Redmi K20 Pro 6GB+128GB</a>
+								<span>骁龙855旗舰处理器，索尼4800万超</span>
+								<span class="price">2599元</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/index.js"></script>
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@ document.writeln("	<meta charset=\'UTF-8\'>");
 document.writeln("	<meta name=\'viewport\' content=\'width=device-width, initial-scale=1.0\'>");
 document.writeln("	<meta http-equiv=\'X-UA-Compatible\' content=\'ie=edge\'>");
 document.writeln("	<title>Document</title>");
-document.writeln("	<link rel=\'stylesheet\' href=\'/css/header.css\'>");
+document.writeln("	<link rel=\'stylesheet\' href=\'\./css/header.css\'>");
 document.writeln("</head>");
 document.writeln("");
 document.writeln("<body>");
