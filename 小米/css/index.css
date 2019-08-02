@@ -3,9 +3,10 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+
 [v-cloak] {
 	display: none !important;
-  }
+}
 
 .box {
 	width: 100%;
@@ -115,7 +116,8 @@
 .carLeft ul li:hover {
 	background-color: #ff6700;
 }
-.carReft{
+
+.carReft {
 	width: 100%;
 	height: 100%;
 }
@@ -202,6 +204,7 @@
 	width: 1226px;
 
 }
+
 .b2headRight {
 	float: right;
 	width: 92px;
@@ -223,12 +226,14 @@
 	color: #424242;
 	line-height: 52px;
 }
-.commodity{
+
+.commodity {
 	width: 1226px;
 	height: 628px;
-	margin-bottom:8px;
+	margin-bottom: 8px;
 }
-.commodityLeft{
+
+.commodityLeft {
 	width: 234px;
 	height: 614px;
 	float: left;
@@ -236,17 +241,20 @@
 	transition: all .2s linear;
 
 }
-.commodityLeft img{
+
+.commodityLeft img {
 	height: 100%;
 	width: 100%;
 }
-.commodityRight{
+
+.commodityRight {
 	width: 992px;
 	height: 628px;
 	float: left;
 }
- .commRList{
-	width:234px;
+
+.commRList {
+	width: 234px;
 	height: 300px;
 	margin-left: 10px;
 	margin-bottom: 14px;
@@ -259,14 +267,16 @@
 	transition: all .2s linear;
 
 }
-.dongHua:hover{
+
+.dongHua:hover {
 	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 	-webkit-transform: translate3d(0, -2px, 0);
 	transform: translate3d(0, -2px, 0);
 }
-.commTitle{
-	width:64px;
+
+.commTitle {
+	width: 64px;
 	height: 20px;
 	margin: 0 auto;
 	background-color: #83c44e;
@@ -277,88 +287,103 @@
 	top: 0px;
 	left: 37%;
 }
-.commRList img{
+
+.commRList img {
 	width: 160px;
 	height: 160px;
 	display: inline-block;
 }
-.commRList a{
+
+.commRList a {
 	text-decoration: none;
 	display: block;
 	color: #333;
 	font-size: 14px;
-    font-weight: 400;
+	font-weight: 400;
 }
-.commRList span{
+
+.commRList span {
 	margin: 0 10px 10px;
-    height: 18px;
+	height: 18px;
 	font-size: 12px;
-	color:#b0b0b0;
+	color: #b0b0b0;
 }
-.commRList .price{
+
+.commRList .price {
 	color: #ff6700;
 	font-size: 14px;
 	margin-right: 3px;
 	display: inline-block;
 }
-.commRList p{
+
+.commRList p {
 	margin: 14px;
 }
-.commRList del{
+
+.commRList del {
 	font-size: 14px;
 	color: #b0b0b0;
 }
-.tupian{
+
+.tupian {
 	width: 1226px;
 	height: 120px;
-	margin-top:28px;
-	margin-bottom: 22px; 
+	margin-top: 28px;
+	margin-bottom: 22px;
 }
-.tupian img{
+
+.tupian img {
 	width: 100%;
 	height: 100%;
 }
-.tupianLeft{
+
+.tupianLeft {
 	width: 280px;
 	height: 42px;
 	float: right;
-	margin:auto 0;
+	margin: auto 0;
 
 }
-.tupianLeft ul{
+
+.tupianLeft ul {
 	width: 280px;
 	height: 26px;
-display: inline-block;
-margin-top: 15px;
-	
+	display: inline-block;
+	margin-top: 15px;
+
 }
-.tupianLeft li{
+
+.tupianLeft li {
 	list-style: none;
 	display: inline;
 	margin: 0 0 0 25px;
 	font-size: 16px;
-	
+
 }
-.aa{
+
+.aa {
 	width: 234px;
 	height: 300px;
 	margin-bottom: 14px;
 	transition: all .2s linear;
 }
-.hot-sale{
+
+.hot-sale {
 	width: 1226px;
 	height: 415px;
 	margin-bottom: 20px;
 
-	
+
 }
-.hot-sale ul{
+
+.hot-sale ul {
 	width: 1240px;
 	height: 415px;
 	display: flex;
 	justify-content: space-between;
 }
-.hot-sale li{
+
+.hot-sale li {
 	width: 296px;
 	height: 415px;
 	display: inline-block;
@@ -366,44 +391,84 @@ margin-top: 15px;
 	transition: all .2s linear;
 	background: #fff;
 }
-.hot-sale li img{
+
+.hot-sale li img {
 	display: block;
 	width: 296px;
 	height: 220px;
-	margin-bottom:28px;
+	margin-bottom: 28px;
 }
-.hot-p1{
+
+.hot-p1 {
 	width: 240px;
 	height: 72px;
 	margin: 0 28px;
-	
+
 
 }
-.hot-sale a{
+
+.hot-sale a {
 	text-decoration: none;
 	color: #333;
 	font-size: 14px;
-    line-height: 24px;
+	line-height: 24px;
 	font-weight: 400;
 }
-.hot-sale p{
+
+.hot-sale p {
 	margin: 0 28px 8px;
-    padding: 0 10px 0 0;
-    font-size: 12px;
-    color: #b0b0b0;
+	padding: 0 10px 0 0;
+	font-size: 12px;
+	color: #b0b0b0;
 }
-.hot-sale div{
+
+.hot-sale div {
 	margin: 0 30px;
 }
-.hot-sale div span{
+
+.hot-sale div span {
 	font-size: 14px;
-    font-weight: 400;
+	font-weight: 400;
 }
-.hot-sale div a{
+
+.hot-sale div a {
 	color: #ff6700;
 
 }
-.hot-sale div span:nth-child(2){
-	margin:0 5.5px;
+
+.hot-sale div span:nth-child(2) {
+	margin: 0 5.5px;
 	color: #e0e0e0;
+}
+
+.dongHua1 {
+	position: relative;
+	overflow: hidden;
+}
+
+.dongHua1 div.mask {
+	width: 234px;
+	height: 70px;
+	background-color: #ff6700;
+	position: absolute;
+	bottom: -70px;
+	left: 0;
+	transition: all 1s linear;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.dongHua1 .show {
+	/* display: none; */
+	/* transition: all 1s linear; */
+	transform: translateY(-70px);
+}
+
+
+.dongHua1 .mask .maskSpan1{
+	color: #fff;
+}
+.dongHua1 .mask .maskSpan2{
+color:rgba(255,255,255,0.6);
 }
