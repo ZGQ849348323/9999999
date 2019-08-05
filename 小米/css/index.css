@@ -453,7 +453,7 @@
 	position: absolute;
 	bottom: -70px;
 	left: 0;
-	transition: all 1s linear;
+	transition: all 0.3s linear;
 	display: flex;
 	flex-direction: column;
 
@@ -467,8 +467,69 @@
 
 
 .dongHua1 .mask .maskSpan1{
+	margin-top: 5px;
 	color: #fff;
 }
 .dongHua1 .mask .maskSpan2{
 color:rgba(255,255,255,0.6);
+}
+.hot-saleM{
+	overflow: hidden;
+	padding-top: 45px;
+
+}
+.hot-saleM .hot-saleS1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 374px;;
+}
+.hot-saleS .hot-saleS1 img{
+	height: 154px;
+	width: 216px;
+	margin: 0 auto;
+}
+.hot-saleS1 h2{
+	margin-bottom: 18px;
+	color: #ff6700;
+	font-size: 16px;
+	font-weight: 400px;
+}
+.hot-saleS1 h4{
+	margin-bottom: 5px;
+	font-size: 20px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hot-saleS1 p{
+	padding: 0;
+	margin-bottom: 10px;
+	height: 40px;
+	
+}
+.hot-saleS .hot-saleS1 .price{
+	height: 21px;
+	margin-bottom: 15px;
+	color: #333;
+	font-size: 14px;
+}
+.hot-saleS .hot-saleSB{
+	height: 30px;
+	width: 90px;
+}
+.hot-saleS .hot-saleSB li{
+	width: 20px;
+	height: 20px;
+	margin-top:20px; 
+	
+}
+.hot-saleS .hot-saleSB li span{
+	background-color: #b0b0b0;
+	display: block;
+    width: 10px;
+	height: 10px;
+	border: 2px solid #f5f5f5;
+	border-radius: 6px;
+	margin: auto;
 }
