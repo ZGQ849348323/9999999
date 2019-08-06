@@ -7,7 +7,6 @@
 [v-cloak] {
 	display: none !important;
 }
-
 .box {
 	width: 100%;
 	height: 100%;
@@ -466,70 +465,112 @@
 }
 
 
-.dongHua1 .mask .maskSpan1{
+.dongHua1 .mask .maskSpan1 {
 	margin-top: 5px;
 	color: #fff;
 }
-.dongHua1 .mask .maskSpan2{
-color:rgba(255,255,255,0.6);
+
+.dongHua1 .mask .maskSpan2 {
+	color: rgba(255, 255, 255, 0.6);
 }
-.hot-saleM{
+
+.hot-saleM {
 	overflow: hidden;
 	padding-top: 45px;
+	position: relative;
 
 }
-.hot-saleM .hot-saleS1{
+
+.hot-saleM .hot-saleS1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 374px;;
+	height: 374px;
+	;
 }
-.hot-saleS .hot-saleS1 img{
+
+.hot-saleS .hot-saleS1 img {
 	height: 154px;
 	width: 216px;
 	margin: 0 auto;
 }
-.hot-saleS1 h2{
+
+.hot-saleS1 h2 {
 	margin-bottom: 18px;
 	color: #ff6700;
 	font-size: 16px;
 	font-weight: 400px;
 }
-.hot-saleS1 h4{
+
+.hot-saleS1 h4 {
 	margin-bottom: 5px;
 	font-size: 20px;
 	text-overflow: ellipsis;
-    white-space: nowrap;
+	white-space: nowrap;
 }
-.hot-saleS1 p{
+
+.hot-saleS1 p {
 	padding: 0;
 	margin-bottom: 10px;
 	height: 40px;
-	
+
 }
-.hot-saleS .hot-saleS1 .price{
+
+.hot-saleS .hot-saleS1 .price {
 	height: 21px;
 	margin-bottom: 15px;
 	color: #333;
 	font-size: 14px;
 }
-.hot-saleS .hot-saleSB{
+
+.hot-saleS .hot-saleSB {
 	height: 30px;
 	width: 90px;
 }
-.hot-saleS .hot-saleSB li{
+
+.hot-saleS .hot-saleSB li {
 	width: 20px;
 	height: 20px;
-	margin-top:20px; 
-	
+	margin-top: 20px;
+
 }
-.hot-saleS .hot-saleSB li span{
+
+.hot-saleS .hot-saleSB li span {
 	background-color: #b0b0b0;
 	display: block;
-    width: 10px;
+	width: 10px;
 	height: 10px;
 	border: 2px solid #f5f5f5;
 	border-radius: 6px;
 	margin: auto;
+}
+
+.atn1,
+.atn2 {
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	background-color: rgba(66, 66, 66, 0.2);
+	padding-top: 7px;
+
+}
+
+.atn1 {
+	position: absolute;
+	top: 176px;
+	left: 0px;
+	display: none;
+}
+
+.atn2 {
+	position: absolute;
+	top: 176px;
+	right: 0px;
+	display: none;
+
+}
+.hot-saleM .hot-saleS{
+	width: 888px;
 }

@@ -22,3 +22,33 @@ $(".dongHua1").mouseover(function(){
 	})
 
 })
+
+$(".hot-saleM").mouseover(function(){
+	// $(".atn1").show();
+	$this=$(this);
+	$this.children(".atn1,.atn2").show();
+	$(".hot-saleM").mouseout(function(){
+		$this.children(".atn1,.atn2").hide();
+	})
+})
+
+//切换
+var n = 0;
+$(".atn2").click(function(){
+	if(n==2) {
+		return;
+	}
+	n++;
+	$this=$(this);
+	$this.siblings('ul').css("margin-left",-296*n+"px").css("transition","margin-left 0.5s ease");
+})
+$(".atn1").click(function(){	
+	if(n==0) {
+		return;
+	}
+	$this=$(this);
+	n--;
+	$this.siblings('ul').css("margin-left",-296*n+"px").css("transition","margin-left 0.5s ease");
+	
+})
+
