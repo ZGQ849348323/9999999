@@ -33,22 +33,31 @@ $(".hot-saleM").mouseover(function(){
 })
 
 //切换
-var n = 0;
+
+// var n = 0;
+var nArr = [0,0,0,0];
 $(".atn2").click(function(){
-	if(n==2) {
+	$this=$(this);
+	console.log(this.dataset.i)
+	let i = this.dataset.i;
+	if(nArr[i]==2) {
 		return;
 	}
-	n++;
-	$this=$(this);
-	$this.siblings('ul').css("margin-left",-296*n+"px").css("transition","margin-left 0.5s ease");
-})
-$(".atn1").click(function(){	
-	if(n==0) {
-		return;
-	}
-	$this=$(this);
-	n--;
-	$this.siblings('ul').css("margin-left",-296*n+"px").css("transition","margin-left 0.5s ease");
-	
+	nArr[i]++;
+	$this.siblings('ul').css("margin-left",-296*nArr[i]+"px").css("transition","margin-left 0.5s ease");
+	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]})`).children('span').removeClass('lala');
+	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]})`).next().children('span').addClass('lala');
 })
 
+$(".atn1").click(function(){	
+	$this=$(this);
+	let i = this.dataset.i;
+	if(nArr[i]==0) {
+		return;
+	}
+	nArr[i]--;
+	$this.siblings('ul').css("margin-left",-296*nArr[i]+"px").css("transition","margin-left 0.5s ease");
+	// console.log(n)
+	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]+2})`).children('span').removeClass('lala');
+	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]+2})`).prev().children('span').addClass('lala');
+})
