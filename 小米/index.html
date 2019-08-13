@@ -16,13 +16,14 @@
 <body>
 	<div class="box">
 		<div class="box1">
-			<div class="topTitle">
+			<div class="topTitle" id="tta">
 				<div class="ttLeft">
 					<img src="img/tupian/mi-logo.png" alt="">
 				</div>
 				<ul>
+					<!-- <li v-for="(tts,i) of tt" :key="i"><a href="javascript:;" v-cloak>{{tts}}</a></li> -->
 					<li><a href="javacript:;">小米手机</a></li>
-					<li><a href="javacript:;">Redmi红米</a></li>
+					<li><a href="javacript:;">小米手机</a></li>
 					<li><a href="javacript:;">电视</a></li>
 					<li><a href="javacript:;">笔记本</a></li>
 					<li><a href="javacript:;">家电</a></li>
@@ -36,20 +37,39 @@
 					<input type="search">
 				</div>
 			</div>
+			<div id="navMenu">
+
+			</div>
 			<div class="carousel">
 				<div class="carLeft" id="carL">
 					<ul>
-						<li v-for="(cars,i) of car" :key="i"><a href="javascript:;" v-cloak>{{cars}}</a></li>
-						<!-- <li><a href="javascript:;">电视 盒子</a></li>
-								<li><a href="javascript:;">笔记本 平板</a></li>
-								<li><a href="javascript:;">家电 插线板</a></li>
-								<li><a href="javascript:;">出行 穿戴</a></li>
-								<li><a href="javascript:;">智能 路由器</a></li>
-								<li><a href="javascript:;">电源 配件</a></li>
-								<li><a href="javascript:;">健康 儿童</a></li>
-								<li><a href="javascript:;">耳机 音响</a></li>
-								<li><a href="javascript:;">生活 箱包</a></li> -->
+						
+							<!-- <li v-for="(cars,i) of car" :key="i"><a href="javascript:;" v-cloak>{{cars}}</a></li> -->
+							<li data-index="0" ><a href="javascript:;">手机 电话卡</a></li>
+							<li data-index="1" ><a href="javascript:;">电视 盒子</a></li>
+							<li data-index="2" ><a href="javascript:;">笔记本 平板</a></li>
+							<li data-index="3" ><a href="javascript:;">家电 插线板</a></li>
+							<li data-index="4" ><a href="javascript:;">出行 穿戴</a></li>
+							<li data-index="5" ><a href="javascript:;">智能 路由器</a></li>
+							<li data-index="6" ><a href="javascript:;">电源 配件</a></li>
+							<li data-index="7" ><a href="javascript:;">健康 儿童</a></li>
+							<li data-index="8" ><a href="javascript:;">耳机 音响</a></li>
+							<li data-index="9" ><a href="javascript:;">生活 箱包</a></li>
+						
 					</ul>
+				</div>
+				<div class="category-item">
+					<div style="background-color: black"></div>
+					<div style="background-color: red"></div>
+					<div style="background-color: orange"></div>
+					<div style="background-color: purple"></div>
+					<div style="background-color: pink"></div>
+					<div style="background-color: aquamarine"></div>
+					<div style="background-color: darkgreen"></div>
+					<div style="background-color: lightslategrey"></div>
+					<div style="background-color: orangered"></div>
+					<div style="background-color: darkslategray"></div>
+
 				</div>
 				<div class="carReft"></div>
 			</div>
@@ -229,7 +249,7 @@
 							<a href="javascript:;">Redmi K20 Pro 6GB+128GB</a>
 							<span>骁龙855旗舰处理器，索尼4800万超</span>
 							<p><span class="price">2599元</span></p>
-							
+
 						</div>
 					</div>
 				</div>
@@ -332,7 +352,7 @@
 				</div>
 
 				<div class="b2head">
-					<h2>热销产品</h2>					
+					<h2>热销产品</h2>
 				</div>
 				<div class="hot-sale">
 					<ul>
@@ -371,7 +391,7 @@
 					</ul>
 				</div>
 				<div class="b2head">
-					<h2>热销产品</h2>					
+					<h2>热销产品</h2>
 				</div>
 				<div class="hot-sale">
 					<ul>
@@ -383,7 +403,8 @@
 									<h2>图片</h2>
 									<h4>展现你的存在</h4>
 									<p>一本职场人的演说指导书</p>
-									<p class="price">5.99元</p><img src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
+									<p class="price">5.99元</p><img
+										src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
 									<ul class="hot-saleSB">
 										<li><span class="lala"></span></li>
 										<li><span></span></li>
@@ -391,28 +412,29 @@
 									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>好吗好的</h4>
-										<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-										<p class="price">17.99元</p><img src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
+									<h2>图片</h2>
+									<h4>好吗好的</h4>
+									<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+									<p class="price">17.99元</p><img
+										src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>展现你的存在</h4>
-										<p>海量好书，享受精品阅读时光<br>
-											漂亮的中文排版，千万读者选择！</p>
-										<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
-								</li>								
+									<h2>图片</h2>
+									<h4>展现你的存在</h4>
+									<p>海量好书，享受精品阅读时光<br>
+										漂亮的中文排版，千万读者选择！</p>
+									<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						<li class="dongHua hot-saleM" style="border-top: 1px solid #ffac13">
@@ -423,7 +445,8 @@
 									<h2>图片</h2>
 									<h4>展现你的存在</h4>
 									<p>一本职场人的演说指导书</p>
-									<p class="price">5.99元</p><img src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
+									<p class="price">5.99元</p><img
+										src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
 									<ul class="hot-saleSB">
 										<li><span class="lala"></span></li>
 										<li><span></span></li>
@@ -431,30 +454,31 @@
 									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>好吗好的</h4>
-										<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-										<p class="price">17.99元</p><img src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
+									<h2>图片</h2>
+									<h4>好吗好的</h4>
+									<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+									<p class="price">17.99元</p><img
+										src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>展现你的存在</h4>
-										<p>海量好书，享受精品阅读时光<br>
-											漂亮的中文排版，千万读者选择！</p>
-										<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
-								</li>								
+									<h2>图片</h2>
+									<h4>展现你的存在</h4>
+									<p>海量好书，享受精品阅读时光<br>
+										漂亮的中文排版，千万读者选择！</p>
+									<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
+								</li>
 							</ul>
-						</li>						
+						</li>
 						<li class="dongHua hot-saleM" style="border-top: 1px solid #ffac13">
 							<a class="atn1" data-i="2"><i class="iconfont">&#xe731;</i> </a>
 							<a class="atn2" data-i="2"><i class="iconfont">&#xe735;</i> </a>
@@ -463,7 +487,8 @@
 									<h2>图片</h2>
 									<h4>展现你的存在</h4>
 									<p>一本职场人的演说指导书</p>
-									<p class="price">5.99元</p><img src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
+									<p class="price">5.99元</p><img
+										src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
 									<ul class="hot-saleSB">
 										<li><span class="lala"></span></li>
 										<li><span></span></li>
@@ -471,28 +496,29 @@
 									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>好吗好的</h4>
-										<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-										<p class="price">17.99元</p><img src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
+									<h2>图片</h2>
+									<h4>好吗好的</h4>
+									<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+									<p class="price">17.99元</p><img
+										src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>展现你的存在</h4>
-										<p>海量好书，享受精品阅读时光<br>
-											漂亮的中文排版，千万读者选择！</p>
-										<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
-								</li>								
+									<h2>图片</h2>
+									<h4>展现你的存在</h4>
+									<p>海量好书，享受精品阅读时光<br>
+										漂亮的中文排版，千万读者选择！</p>
+									<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						<li class="dongHua hot-saleM" style="border-top: 1px solid #ffac13">
@@ -503,7 +529,8 @@
 									<h2>图片</h2>
 									<h4>展现你的存在</h4>
 									<p>一本职场人的演说指导书</p>
-									<p class="price">5.99元</p><img src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
+									<p class="price">5.99元</p><img
+										src="img/tupian/8b3679ff-48af-4087-9c67-e103aef4763e.png" alt="">
 									<ul class="hot-saleSB">
 										<li><span class="lala"></span></li>
 										<li><span></span></li>
@@ -511,31 +538,32 @@
 									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>好吗好的</h4>
-										<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-										<p class="price">17.99元</p><img src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
+									<h2>图片</h2>
+									<h4>好吗好的</h4>
+									<p>畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+									<p class="price">17.99元</p><img
+										src="img/tupian/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
 								</li>
 								<li class="hot-saleS1">
-										<h2>图片</h2>
-										<h4>展现你的存在</h4>
-										<p>海量好书，享受精品阅读时光<br>
-											漂亮的中文排版，千万读者选择！</p>
-										<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
-										<ul class="hot-saleSB">
-											<li><span></span></li>
-											<li><span></span></li>
-											<li><span></span></li>
-										</ul>
-								</li>								
+									<h2>图片</h2>
+									<h4>展现你的存在</h4>
+									<p>海量好书，享受精品阅读时光<br>
+										漂亮的中文排版，千万读者选择！</p>
+									<p class="price">17.99元</p><img src="img/tupian/more-duokan.jpg" alt="">
+									<ul class="hot-saleSB">
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
-						
+
 					</ul>
 				</div>
 

@@ -4,7 +4,12 @@ new Vue({
 		car:["手机 电话卡","电视 盒子","笔记本 平板","家电 插线板","出行 穿戴","智能 路由器","电源 配件","健康 儿童","耳机 音响","生活 箱包"],
 	}
 })
-
+// new Vue({
+// 	el:"#tta",
+// 	data:{
+// 		tt:["小米手机","小米手机","电视","笔记本","家电","路由器","智能硬件","服务","社区"]
+// 	}
+// })
 
 $(".dongHua1").mouseover(function(){
 	// var $index=$(this).index();
@@ -60,4 +65,14 @@ $(".atn1").click(function(){
 	// console.log(n)
 	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]+2})`).children('span').removeClass('lala');
 	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]+2})`).prev().children('span').addClass('lala');
+})
+
+$(".carLeft ul li").click(function(){
+	$this=$(this);
+	var index=this.dataset.index;
+	var show=this.dataset.style;
+	// console.log(this.dataset.style)
+	console.log(this.dataset.index)
+	$(".category-item div").eq(index).addClass('active').siblings().removeClass('active')
+	
 })
