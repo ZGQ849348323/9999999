@@ -67,12 +67,27 @@ $(".atn1").click(function(){
 	$this.siblings('ul').children('li').children('ul').children(`li:nth-child(${nArr[i]+2})`).prev().children('span').addClass('lala');
 })
 
-$(".carLeft ul li").click(function(){
+$(".carLeft ul li").mouseover(function(){
 	$this=$(this);
 	var index=this.dataset.index;
-	var show=this.dataset.style;
-	// console.log(this.dataset.style)
-	console.log(this.dataset.index)
-	$(".category-item div").eq(index).addClass('active').siblings().removeClass('active')
-	
+	$(".category-item div").eq(index).addClass('active').siblings().removeClass('active');	
 })
+$(".carLeft").mouseleave(function(){
+	$(".category-item div").removeClass('active')		
+})
+
+
+
+
+
+
+
+
+
+// background-color: red;
+//     position: absolute;
+//     top: 1px;
+//     /* display: block; */
+//     left: 227px;
+//     width: 500px;
+//     height: 500px;

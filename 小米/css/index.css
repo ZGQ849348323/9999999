@@ -599,3 +599,15 @@
 .category-item div.active {
 	display: block;
 }
+.category-item{
+	position: absolute;
+	top: 1px;
+	left: 227px;
+
+}
+.category-item div{
+     
+     /* display: block; */
+     width: 500px;
+     height: 500px;
+}
